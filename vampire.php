@@ -10,4 +10,10 @@ class Vampire extends Monster
         $this->setName($name);
         $this->victims = 0;
     }
+
+    function attack()
+    {
+        echo "$this->name will suck your blooooood!<br>";
+        $this->victims++;
+    }
 }
